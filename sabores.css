@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    font-family: 'Quicksand';
+}
+
+
+/* ***************** */
+/* SECCION I N I C I O */
+/* ***************** */
+
+header {
+    width: 100%;
+}
+
+header .contenido-header {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+
+}
+
+header .contenido-header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .contenido-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header .contenido-header .logo a {
+    color: #ff8f46;
+    font-size: 22px;
+}
+
+header .contenido-header nav ul li {
+    text-align: center;
+}
+
+header .contenido-header nav ul li i {
+    display: block;
+    color: #a8a8a8;
+    margin-bottom: 10px;
+}
+
+header .contenido-header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #a8a8a8;
+    margin: 0px 20px;
+}
+
+header .contenido-header nav ul li:hover i {
+    color: #ff8f46;
+}
+
+header .contenido-header .social a {
+    display: inline-block;
+    background-color: #ff8f46;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+header .contenido-header .social>i {
+    display: inline-block;
+    color: #a8a8a8;
+    margin-left: 10px;
+}
+
+.nav-responsive {
+    display: none;
+    font-size: 25px;
+    color: #a8a8a8;
+}
+
+body {
+    background: #f1f1f1 !important;
+}
+
+body .container {
+    max-width: 1100px;
+}
+
+#filter-buttons button {
+    border-radius: 3px;
+    background: #fff;
+    border-color: transparent;
+}
+
+#filter-buttons button:hover {
+    background: #ddd;
+}
+
+#filter-buttons button.active {
+    color: #fff;
+    background: #6c757d;
+}
+
+#filterable-cards {
+    margin-bottom: 100px;
+}
+
+#filterable-cards .card {
+    width: 15rem;
+    border: 2px solid transparent;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#filterable-cards .card:hover {
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+#filterable-cards .card.hide {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #filterable-cards {
+        justify-content: center;
+    }
+
+    #filterable-cards .card {
+        width: calc(100% / 2 - 10px);
+    }
+}

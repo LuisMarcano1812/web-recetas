@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q'RICO</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <a href="index.html">
+                        <h1>Q'RICO</h1>
+                    </a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="sabores.html" onclick="seleccionar()">
+                                <i class="fa-solid fa-ice-cream"></i>
+                                <span>Sabores</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#blog" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Opiniones</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-comments"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="tel:+1123-456-7890">
+                        <i class="fa-solid fa-phone"></i>+57 312 4156889
+                    </a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/?mx=1"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround":true, "pageDots": false, "autoPlay": true}'>
+                <div class="gallery-cell">
+                    <img src="img/1.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/2.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/3.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/4.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Comidas exquisitas para el paladar </h2>
+                <p>¡Las mejores recetas que podrás encontrar!</p>
+                <button><a href="#platos">Ver Más</a></button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION SABORES -->
+    <section id="sabores">
+        <h2>Sabores</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor1.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Ensaladas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor2.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Tortas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor3.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Hamburguesas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor4.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Helados</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor5.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pastas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/sabor6.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Galletas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+
+        <button>Ver Más</button>
+
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+        <h2>Platos destacados</h2>
+
+        <div class="fila">
+            <div class="item">
+                <!-- Image trigger modal -->
+                <img src="img/plato1.jpg" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal">
+                </img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Chiles y Alitas de Pollo Frito</h5>
+                            </div>
+                            <div class="modal-body">
+                                <a data-mdb-ripple-init href="#!">
+                                    <img alt="example" class="img-fluid roundedimg-modal" src="img/plato1.jpg" />
+                                </a>
+
+                                <h3 class="titulo-ingredientes">Ingredientes</h3>
+                                <ul>
+                                    <li>½ taza de salsa de chili dulce Maggi®</li>
+                                    <li>1/3 taza de salsa de soya</li>
+                                    <li>¼ taza de miel</li>
+                                    <li>2 cucharaditas de salsa de chile</li>
+                                    <li>¼ cucharadita de ajo en polvo</li>
+                                    <li>1 ½ libras de alitas de pollo</li>
+                                    <li>1 cucharada de polvo de cinco especias (five-spice powder)
+                                    </li>
+                                    <li>1 cucharadita de sal</li>
+                                    <li>2 cucharadas de aceite de vegetal</li>
+                                </ul>
+                                <h3 class="titulo-ingredientes">Preparación</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button data-mdb-collapse-init class="accordion-button" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Paso 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Combinar la salsa de chile dulce, la salsa de soya, la miel, la salsa de
+                                                chile
+                                                y
+                                                el
+                                                ajo en polvo. Poner a un lado. Secar los trozos de pollo; espolvorear
+                                                por todos
+                                                los
+                                                lados con el polvo de cinco especias y la sal.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button id="boton2" data-mdb-collapse-init
+                                                class="accordion-button collapsed" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Paso 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Calentar el aceite en una sarten mediano sobre fuego medio. Trabajando
+                                                por
+                                                lotes,
+                                                dorar las alas de pollo y poner a un lado. Cuando todas las alitas están
+                                                doradas,
+                                                vuélvelas a la sarten y cubrir con la salsa. Llevar a un hervor lenta;
+                                                reducir
+                                                el
+                                                fuego a bajo. Cocinar, dándole vuelta al pollo ocasionalmente, durante
+                                                10 a 15
+                                                minutos o hasta que está completamente cocido. La salsa va ir espesando
+                                                durante
+                                                la
+                                                cocción. Retirar de la sarten; poner en un platón. Cubrir las alitas con
+                                                la
+                                                salsa
+                                                restante y servir.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Chiles Y Alitas De Pollo Frito</p>
+            </div>
+            <div class="item">
+                <!-- Image trigger modal -->
+                <img src="img/plato2.jpg" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal2">
+                </img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ensalada De Pescado</h5>
+                            </div>
+                            <div class="modal-body">
+                                <a data-mdb-ripple-init href="#!">
+                                    <img alt="example" class="img-fluid rounded img-modal" src="img/plato2.jpg" />
+                                </a>
+                                <h3 class="titulo-ingredientes">Ingredientes</h3>
+                                <ul>
+                                    <li>1/2 Cucharada grande Sazonador Naturísimo Maggi®, 180G</li>
+                                    <li>1 1/2 Taza Lentejas blandas con un caldo de Pollo MAGGI y escurridas</li>
+                                    <li>2 Tazas Lechuga Romana cortada en tiras</li>
+                                    <li>1 Taza Zucchini cortado en tiras</li>
+                                    <li>1/2 Taza Cebolla Roja cortada en tiras</li>
+                                    <li>1/2 Taza Pimiento Morron, Rojo cortado en tiras</li>
+                                    <li>1/4 Taza Aceite De Oliva
+                                    </li>
+                                    <li>1 Cucharadita Sazonador Naturísimo Maggi®, 180G</li>
+                                    <li>1 Cucharada grande Jugo De Limon</li>
+                                </ul>
+                                <h3 class="titulo-ingredientes">Preparación</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button data-mdb-collapse-init class="accordion-button" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Paso 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Sazona el pescado con el Sazonador Naturísimo MAGGI®, en una parrilla
+                                                untada de aceite, coloca el pescado y cocina por ambos lados, deja
+                                                refrescar y corta en tiras.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button id="boton2" data-mdb-collapse-init
+                                                class="accordion-button collapsed" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Paso 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Para el aderezo, mezcla aceite de oliva, Sazonador Naturísimo MAGGI®,
+                                                jugo de limón, tomillo, miel de abeja y mostaza. Reserva.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button data-mdb-collapse-init class="accordion-button collapsed"
+                                                type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Paso 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                En un bowl mezcla todos los ingredientes junto con el pescado reservado,
+                                                añade el aderezo y sirve.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Ensalada De Pescado</p>
+            </div>
+            <div class="item">
+                <!-- Image trigger modal -->
+                <img src="img/plato3.jpg" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal3">
+                </img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Carne Asada Servido En Plato
+                                    Blanco</h5>
+                            </div>
+                            <div class="modal-body">
+                                <a data-mdb-ripple-init href="#!">
+                                    <img alt="example" class="img-fluid rounded img-modal" src="img/plato3.jpg" />
+                                </a>
+                                <h3 class="titulo-ingredientes">Ingredientes</h3>
+                                <ul>
+                                    <li>(454g.) 1 libra de carne de res</li>
+                                    <li>(8g.) 2 CUBITOS DE RES MAGGI®</li>
+                                    <li>Sal y pimienta al gusto</li>
+                                    <li>(15g.) 1 cucharada de aceite de oliva</li>
+                                    <li>Aguacate</li>
+                                    <li>Frijol negro</li>
+                                    <li>Encurtido de repollo
+                                    </li>
+                                    <li>Arroz</li>
+                                    <li>Plátano frito</li>
+                                </ul>
+                                <h3 class="titulo-ingredientes">Preparación</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button data-mdb-collapse-init class="accordion-button" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Paso 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                En un recipiente triturar el CUBITO DE RES MAGGI® junto con la sal y la
+                                                pimienta e integrar. Sazonar la carne con esta mezcla ayudado con el
+                                                aceite de oliva y reservar.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button id="boton2" data-mdb-collapse-init
+                                                class="accordion-button collapsed" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Paso 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Azar la carne en una parrilla a fuego alto por 3 minutos a cada lado. En
+                                                una superficie plana cortar la carne en tiras.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button data-mdb-collapse-init class="accordion-button collapsed"
+                                                type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Paso 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Servir y disfrutar junto con los acompañamientos ya seleccionados
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Carne Asada Servido En Plato Blanco</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <!-- Image trigger modal -->
+                <img src="img/plato4.jpg" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal4">
+                </img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bife a la Plancha con Papas
+                                    Fritas</h5>
+                            </div>
+                            <div class="modal-body">
+                                <a data-mdb-ripple-init href="#!">
+                                    <img alt="example" class="img-fluid rounded img-modal" src="img/plato4.jpg" />
+                                </a>
+                                <h3 class="titulo-ingredientes">Ingredientes</h3>
+                                <ul>
+                                    <li>6 Bifes de carne (lomo, asiento, posta rosada)</li>
+                                    <li>1 Sobre de Caldo en polvo MAGGI® sabor Costilla</li>
+                                    <li>2 Cucharadas de aceite de oliva</li>
+                                    <li>2 Cucharadas de finas hierbas (romero, estragón, tomillo)</li>
+                                    <li>1/4 Taza de agua caliente</li>
+                                    <li>1 Paquete de espárragos</li>
+                                    <li>1 Bandeja de tomates cocktail o cherry (300 g)
+                                    </li>
+                                    <li>6 Papas mediana cortada en láminas</li>
+                                    <li>3 Cucharadita de mantequilla</li>
+                                </ul>
+                                <h3 class="titulo-ingredientes">Preparación</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button data-mdb-collapse-init class="accordion-button" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Paso 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                En un pequeño bowl junta el Sobre de Caldo en polvo MAGGI® sabor
+                                                Costilla con el aceite de oliva indicado y las finas hierbas, revuelve y
+                                                agrega el agua hirviendo. Pincela cada uno de los bifes de carne y
+                                                reposa durante 10 min. tapados en refrigeración.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button id="boton2" data-mdb-collapse-init
+                                                class="accordion-button collapsed" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Paso 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Aparte, deja todas las verduras en una budinera apta para el horno.
+                                                Condimenta con un toque de sal y pimienta a gusto. Acomoda sobre la
+                                                superficie los trozos de mantequilla y lleva a horno fuerte de 180°C
+                                                durante 20 minutos aproximados hasta cocerlos completamente.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button data-mdb-collapse-init class="accordion-button collapsed"
+                                                type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Paso 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Mientras, calienta una sartén antiadherente preferentemente con un toque
+                                                de aceite y cocina los bifes de carne durante unos minutos por ambos
+                                                lados hasta cocerlos completamente y dorarlos. Sirve ambas preparaciones
+                                                bien calientes.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Bife a la Plancha con Papas Fritas</p>
+            </div>
+            <div class="item">
+                <!-- Image trigger modal -->
+                <img src="img/plato5.jpg" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal5">
+                </img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pizza con Rúcula</h5>
+                            </div>
+                            <div class="modal-body">
+                                <a data-mdb-ripple-init href="#!">
+                                    <img alt="example" class="img-fluid rounded img-modal" src="img/plato5.jpg" />
+                                </a>
+                                <h3 class="titulo-ingredientes">Ingredientes</h3>
+                                <ul>
+                                    <li>500grs de harina 0000</li>
+                                    <li>275cc de agua tibia</li>
+                                    <li>25 gr de levadura</li>
+                                    <li>1/2 cdts de azúcar</li>
+                                    <li>2 1/2 cditas de sal</li>
+                                    <li>30cc de aceite</li>
+                                    <li>3/4 tazas de salsa de tomate para pizza (comprada o casera)
+                                    </li>
+                                    <li>500grs de mozzarella</li>
+                                    <li>2 atados de rúcula</li>
+                                </ul>
+                                <h3 class="titulo-ingredientes">Preparación</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button data-mdb-collapse-init class="accordion-button" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Paso 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+
+                                                Para la masa, primero espumamos la levadura, con un par de cucharadas de
+                                                agua, y el azúcar, y dejamos unos 10 minutos. Poner la harina sobre la
+                                                mesada en forma de corona, distribuir la sal por fuera para que no toque
+                                                la levadura. Agregar en el centro la levadura, el agua y el aceite.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button id="boton2" data-mdb-collapse-init
+                                                class="accordion-button collapsed" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Paso 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Unir hasta tener un bollo liso, suave y elástico, cubrir con film y
+                                                dejar una hora o hasta que duplique su volumen.
+                                                Desgasificar la masa, amasandola bien y dividir en tres bollos, estirar
+                                                uno y poner en una asadura aceitada, cubrir con la salsa de tomate y
+                                                meter en el horno precalentado.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button data-mdb-collapse-init class="accordion-button collapsed"
+                                                type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Paso 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Cuando este doradita por debajo, sacarla, poner el jamón y poner la
+                                                mozzarella. Cuando el queso se haya derretido retirar.
+                                                Agregar la rúcula previamente lavada y escurrida y espolvorear con queso
+                                                parmesano rallado, salpimentar y agregar un chorro de aceite. Cortar en
+                                                pedazos y servir.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Pizza con Rúcula</p>
+            </div>
+            <div class="item">
+                <!-- Image trigger modal -->
+                <img src="img/plato6.jpg" data-mdb-ripple-init data-mdb-modal-init data-mdb-target="#exampleModal6">
+                </img>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pastas con Tuco</h5>
+                            </div>
+                            <div class="modal-body">
+                                <a data-mdb-ripple-init href="#!">
+                                    <img alt="example" class="img-fluid rounded img-modal" src="img/plato6.jpg" />
+                                </a>
+                                <h3 class="titulo-ingredientes">Ingredientes</h3>
+                                <ul>
+                                    <li>200 gramos de fideos secos</li>
+                                    <li>300 gramos de carne picada o molida</li>
+                                    <li>400 gramos de tomates triturados</li>
+                                    <li>1 cebolla</li>
+                                    <li>1 zanahoria</li>
+                                    <li>½ pimiento rojo</li>
+                                    <li>1 diente de ajo
+                                    </li>
+                                    <li>1 copa de vino</li>
+                                    <li>1 cucharada postre de extracto de tomate</li>
+                                </ul>
+                                <h3 class="titulo-ingredientes">Preparación</h3>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button data-mdb-collapse-init class="accordion-button" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Paso 1
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Calienta una olla con 1 cucharada sopera de aceite. Cuando tenga la
+                                                temperatura adecuada, saltea la cebolla y el ajo. Cuando la cebolla esté
+                                                transparente, añade el pimiento y la zanahoria. Remueve cada tanto y
+                                                cocina hasta que se doren un poco.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button id="boton2" data-mdb-collapse-init
+                                                class="accordion-button collapsed" type="button"
+                                                data-mdb-toggle="collapse" data-mdb-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Paso 2
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Incorpora la carne picada o molida asegurándote que el fuego esté fuerte
+                                                para sellar la carne. Cuando la carne esté blanca, incorpora el vino.
+                                                Deja unos minutos y, cuando evapore el alcohol, añade los condimentos
+                                                (sal, pimienta, pimentón dulce, tomillo, ají molido) y el extracto de
+                                                tomate. Mezcla todo bien.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button data-mdb-collapse-init class="accordion-button collapsed"
+                                                type="button" data-mdb-toggle="collapse"
+                                                data-mdb-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Paso 3
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-mdb-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Finalmente, vierte el tomate triturado y remueve para integrar. Cuando
+                                                comience a hervir, baja el fuego al mínimo, tapa y deja cocinar como
+                                                mínimo 40 minutos.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-mdb-ripple-init
+                                    data-mdb-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Pastas con Tuco</p>
+            </div>
+        </div>
+
+        <button><a href="sabores.html" id="btn-platos">Ver Más</a></button>
+
+    </section>
+
+    <!-- SECCION BLOG -->
+    <section id="blog">
+        <h2>Opiniones</h2>
+        <div class="galeria-blog js-flickity" data-flickity-options='{ "wrapAround":true, "pageDots": true}'>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff1.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>El arte de cocinar</h3>
+                        <p>"Estas recetas le dan un giro único a los platos tradicionales."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>¿Donde estudiar cocina?</h3>
+                        <p>"¡Una nueva forma de disfrutar de mis ingredientes favoritos! Nunca pensé que cocinar algo
+                            tan rico fuera tan sencillo."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cell">
+                <div class="item">
+                    <div class="foto">
+                        <img src="img/cheff3.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h3>La cocina del 2024</h3>
+                        <p>"Perfecto para sorprender a mis invitados con platos originales, estas recetas me ahorran
+                            mucho tiempo en la cocina"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>Leer Más</button>
+    </section>
+
+    <!-- SECCION CONTACTO Y PIE DE PAGINA -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>Q'RICO</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#sabores">Sabores</a>
+                <a href="#sabores">Platos</a>
+                <a href="#sabores">Blog</a>
+            </div>
+            <div class="col">
+                <h3>Cheffs</h3>
+                <a href="#">Marcos G.</a>
+                <a href="#">María L.</a>
+                <a href="#">Marta J.</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="https://twitter.com/?mx=1">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="https://www.instagram.com/">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar">
+            </div>
+        </div>
+
+    </section>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.umd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
