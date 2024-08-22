@@ -129,7 +129,9 @@ html {
 }
 
 #inicio .carrusel .info button a,
-#btn-platos {
+#btn-platos,
+#btn-leer,
+#btn-recetas {
     color: #fff;
 }
 
